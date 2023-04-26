@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)),url(images/background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: #fafafa;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #8f18ad;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    font-weight: bold;
+}
+
+
+
+ h1 .dn {
+    font-size: 50px;
+    color: #ef6a00;
+}
+
+li a .menu {
+    color: #ef6a00;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+li a .nav-2 {
+    color: #fafafa;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h1 span {
+    font-size: 50px;
+    color: #ff427a;
+}
+
+p span {
+    color: #ef6a00;
+    font-weight: bold;
+}
+p .b  {
+    color: #ff427a;
+    font-weight: bold;
+} 
+
+.text-box p {
+    margin: 10px 0 40px;
+    font-size: 70px;
+    color: #fff;
+}
+
+.hero-btn {
+    display: inline-block;
+    padding: .5rem 2.8rem;
+    margin-bottom: 50px;
+    background: #8f18ad;
+    border-radius: 4rem;
+    box-shadow: 0 0 2rem #ef6a00;
+    font-size: 20px;
+    color: #fafafa;
+    font-weight: bold;
+    transition: .5s ease;
+    text-decoration: none;
+}
+
+.hero-btn:hover {
+    box-shadow: none;
+    font-weight: bold;
+
+}
+
+nav .fa {
+    display: none;
+}
+
+@media(max-width: 700px) {
+
+    h1 .dn {
+        font-size: 20px;
+        color: #ef6a00;
+    }
+    h1 span {
+        font-size: 20px;
+        color: #ff427a;
+    }
+   
+  
+    .text-box h1 {
+        font-size: 40px;
+    }
+    .text-box p {
+        margin: 5px 0 20px;
+        font-size: 30px;
+        color: #fff;
+    }
+
+    .nav-links ul li {
+        display: block;
+    }
+    .nav-links {
+        position: absolute;
+        background: #3e342f;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        font-weight: bold;
+        transition: 1s;
+    }
+
+    nav .fa {
+        display: block;
+        color: #EEE;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+
+    .nav-links ul {
+        padding: 30px;
+
+    }
+
+}
